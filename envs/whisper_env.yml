@@ -1,0 +1,6 @@
+name: whisper_env
+dependencies:
+  - boto3
+  - pysnooper
+  - pip
+    - git+https://github.com/openai/whisper.git azure-storage-blob
