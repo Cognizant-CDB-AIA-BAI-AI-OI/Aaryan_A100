@@ -21,7 +21,7 @@ def config():
 
 @pysnooper.snoop('outputs/config.log')
 def config():
-  from .whisper import main_func
+  from whisper import main_func
   print('\nrunning main_func\n')
   main_func()
   print('\n DOne main_func\n')
