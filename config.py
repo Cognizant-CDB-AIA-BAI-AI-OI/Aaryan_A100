@@ -21,7 +21,7 @@ def config():
 
 @pysnooper.snoop('outputs/config.log')
 def config():
-  from whisper import main_func
+  from Aaryan_A100.whisper import main_func
   print('\nrunning main_func\n')
   time.sleep(16)
   main_func()
