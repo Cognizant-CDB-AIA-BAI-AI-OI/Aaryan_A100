@@ -1,7 +1,7 @@
 import subprocess
 import time
 import pysnooper
-
+'''
 @pysnooper.snoop('outputs/config.log')
 def config():
   print('config running')
@@ -17,4 +17,11 @@ def config():
     f = open('outputs/Exception.txt','w+')
     f.write(str(sys.exc_info()[0]))
     f.close()
-  
+  '''
+
+@pysnooper.snoop('outputs/config.log')
+def config():
+  from .whisper import main_func
+  print('\nrunning main_func\n')
+  main_func()
+  print('\n DOne main_func\n')
