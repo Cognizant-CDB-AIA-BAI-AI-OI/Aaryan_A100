@@ -23,5 +23,6 @@ def config():
 def config():
   from whisper import main_func
   print('\nrunning main_func\n')
+  time.sleep(16)
   main_func()
   print('\n DOne main_func\n')
