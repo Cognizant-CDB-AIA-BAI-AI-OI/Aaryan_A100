@@ -10,7 +10,6 @@ def main_func():
 
     os.system(s)
     
-
 main_func()
 
 
