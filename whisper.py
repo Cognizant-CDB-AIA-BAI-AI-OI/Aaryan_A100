@@ -4,11 +4,18 @@ import pysnooper
 def main_func():
     import os
 
-    file_path = 'Aaryan_A100/1minvid.webm'
+    #file_path = 'Aaryan_A100/1minvid.webm'
     
-    s = 'whisper ' + file_path + ' --language en --model large --output_dir outputs --condition_on_previous_text False --verbose False'
+    #s = 'whisper ' + file_path + ' --language en --model large --output_dir outputs --condition_on_previous_text False --verbose False'
 
-    os.system(s)
+    #os.system(s)
+    
+    import subprocess
+    subprocess.run('pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html',shell =True)
+    
+    print('Active CUDA Device: GPU', torch.cuda.current_device())
+    print ('Available devices ', torch.cuda.device_count())
+    print ('Current cuda device ', torch.cuda.current_device())
     
 main_func()
 
