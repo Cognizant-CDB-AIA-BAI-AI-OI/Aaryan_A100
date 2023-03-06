@@ -25,7 +25,7 @@ def main_func():
     f.write('this is just a test line')
     f.close()
     
-    time.wait(10)
+    time.sleep(16)
     
     
 main_func()
