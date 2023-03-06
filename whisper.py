@@ -3,6 +3,7 @@ import pysnooper
 @pysnooper.snoop('outputs/file.log')
 def main_func():
     import os
+    import time
 
     #file_path = 'Aaryan_A100/1minvid.webm'
     
@@ -23,6 +24,8 @@ def main_func():
     f = open('outputs/test_file.txt','w+')
     f.write('this is just a test line')
     f.close()
+    
+    time.wait(10)
     
     
 main_func()
