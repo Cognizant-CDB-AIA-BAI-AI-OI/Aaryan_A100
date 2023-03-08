@@ -19,11 +19,12 @@ def main_func():
     print('Active CUDA Device: GPU', torch.cuda.current_device())
     print ('Available devices ', torch.cuda.device_count())
     print ('Current cuda device ', torch.cuda.current_device())
-    '''
+    
     
     f = open('outputs/test_file.txt','w+')
     f.write('this is just a test line')
     f.close()
+    '''
     
     time.sleep(100)
     
