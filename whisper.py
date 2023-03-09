@@ -25,8 +25,10 @@ def main_func():
     f.write('this is just a test line')
     f.close()
     '''
-    
-    time.sleep(100)
+
+    print('Inside internal func')
+    time.sleep(10)
+
     
     
 main_func()
