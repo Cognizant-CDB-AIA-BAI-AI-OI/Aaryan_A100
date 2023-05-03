@@ -26,11 +26,11 @@ def main_func():
     f.close()
     '''
 
-    from scheduler import js_msg
+    #from scheduler import js_msg
     
     
     print('Inside internal func')
-    js_msg('Inside internal func')
+    #js_msg('Inside internal func')
     time.sleep(10)
 
     
